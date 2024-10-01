@@ -1,0 +1,18 @@
+{
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/service/(.*)$",
+      "target": "/service/$1",
+      "destination": "jwincident-auth-token-exchg",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}
