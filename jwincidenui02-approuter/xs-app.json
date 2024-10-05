@@ -1,4 +1,5 @@
 {
+  "welcomeFile": "jwincidenui02",
   "authenticationMethod": "route",
   "routes": [
     {
